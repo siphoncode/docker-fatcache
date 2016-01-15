@@ -16,4 +16,4 @@ RUN make
 ENV PATH /code/fatcache/src:$PATH
 
 EXPOSE 11211
-ENTRYPOINT ["fatcache", "-p", "11211", "--ssd-device=/dev/xvda"]
+ENTRYPOINT ["fatcache", "-p", "11211", "--slab-size", "10", "--ssd-device=/dev/xvda"]
